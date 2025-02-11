@@ -582,6 +582,18 @@ body{
 	animation: fadeInDown 0.5s both 0.1s;
 	box-shadow:0px 0px 13px #00000054;
 }
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Jarak antar item */
+    align-items: center;
+}
+
+.nav-right li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 /*=========================
 	End Header CSS
 ===========================*/
