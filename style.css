@@ -4178,48 +4178,56 @@ body{
 	margin-left:4px;
 }
 /* Container utama */
+/* Container utama */
 .custom-photo-grid {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Jarak antar foto */
+    align-items: flex-start; /* Agar tinggi elemen seragam */
+    gap: 30px; /* Jarak antar kartu */
     padding: 20px;
     flex-wrap: wrap; /* Agar responsif di layar kecil */
+    max-width: 1000px; /* Batas lebar agar tidak terlalu melebar */
+    margin: auto;
 }
 
-/* Styling untuk setiap kartu */
+/* Styling setiap kartu */
 .custom-photo-grid .custom-card {
     text-align: center;
     background: #fff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Lebar tetap */
-    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Ukuran tetap agar seragam */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .custom-photo-grid .custom-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling gambar */
 .custom-photo-grid .custom-card img {
     width: 100%;
-    height: 350px;
+    height: 350px; /* Ukuran tetap agar tidak berubah */
     object-fit: cover;
     border-radius: 8px;
+    display: block;
+    margin: auto;
 }
 
 /* Styling untuk teks */
 .custom-photo-grid .custom-card h4 {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 12px;
+    font-weight: bold;
     color: #333;
 }
 
 .custom-photo-grid .custom-card h6 {
     font-size: 14px;
-    color: #777;
-    margin-bottom: 5px;
+    color: #666;
+    margin-bottom: 10px;
 }
 
 /* Responsif untuk layar kecil */
